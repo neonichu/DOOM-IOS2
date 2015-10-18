@@ -547,6 +547,7 @@
 				DSTROOT = /tmp/doomengine.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -556,6 +557,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../idmobilelib ../prboom";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -565,6 +567,7 @@
 				DSTROOT = /tmp/doomengine.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +577,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "../embeddedaudiosynthesis/arm-wt-22k/host_src ../ ../idmobilelib ../prboom";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
