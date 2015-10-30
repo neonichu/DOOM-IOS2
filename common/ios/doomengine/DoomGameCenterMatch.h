@@ -24,10 +24,10 @@
 #include "ios/GameCenter.h"
 #include "iphone_doom.h"
 
-#include <tr1/array>
+#include <array>
 #include <vector>
 #include <string>
-#include <tr1/cstdint>
+#include <cstdint>
 
 class DoomGameCenterMatch : public idGameCenterMatchHandler {
 public:
@@ -44,19 +44,19 @@ private:
 
 extern DoomGameCenterMatch gDoomGameCenterMatch;
 extern std::string serverGameCenterID;
-extern std::tr1::array<std::string, 4> playerIndexToIDMap;
+extern std::array<std::string, 4> playerIndexToIDMap;
 
 void SetupEmptyNetGame();
 void SendGameCenterSetup();
 void SendJoinPacket();
 
-std::tr1::uint32_t GeneratePlayerGroup( const int deathmatch,
+std::uint32_t GeneratePlayerGroup( const int deathmatch,
 										const int missionPack,
 										const int mapNum,
 										const int fragLimit,
 										const int timeLimit,
 										const int skill );
 										
-packetSetup_t GenerateSetupPacketFromPlayerGroup( std::tr1::uint32_t playerGroup );
+packetSetup_t GenerateSetupPacketFromPlayerGroup( std::uint32_t playerGroup );
 
 #endif

@@ -29,7 +29,7 @@
 DoomGameCenterMatch gDoomGameCenterMatch;
 
 std::string serverGameCenterID;
-std::tr1::array<std::string, 4> playerIndexToIDMap;
+std::array<std::string, 4> playerIndexToIDMap;
 
 namespace {
 	bool IsServer() {
@@ -360,7 +360,7 @@ namespace {
 //------------------------
 // deathmatch: 1 for deathmatch, 2 for altdeath, 0 for cooperative
 //------------------------
-std::tr1::uint32_t GeneratePlayerGroup( const int deathmatch,
+std::uint32_t GeneratePlayerGroup( const int deathmatch,
 										const int missionPack,
 										const int mapNum,
 										const int fragLimit,
@@ -397,7 +397,7 @@ std::tr1::uint32_t GeneratePlayerGroup( const int deathmatch,
 //------------------------
 // Converts a playerGroup from Game Center into a setupPacket_t
 //------------------------
-packetSetup_t GenerateSetupPacketFromPlayerGroup( std::tr1::uint32_t playerGroup ) {
+packetSetup_t GenerateSetupPacketFromPlayerGroup( std::uint32_t playerGroup ) {
 	packetSetup_t packet;
 	
 	packet.packetType = PACKET_VERSION_SETUP;

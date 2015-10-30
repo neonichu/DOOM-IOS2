@@ -31,6 +31,30 @@
 		3D15600514B51175000D33AA /* tess.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FED14B51175000D33AA /* tess.h */; };
 		3D15600614B51175000D33AA /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEE14B51175000D33AA /* tessmono.c */; };
 		3D15600714B51175000D33AA /* tessmono.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FEF14B51175000D33AA /* tessmono.h */; };
+		A183D6B91BD407D500B2DC95 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FD914B51175000D33AA /* dict.c */; };
+		A183D6BA1BD407D500B2DC95 /* geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDB14B51175000D33AA /* geom.c */; };
+		A183D6BB1BD407D500B2DC95 /* memalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDD14B51175000D33AA /* memalloc.c */; };
+		A183D6BC1BD407D500B2DC95 /* mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FDF14B51175000D33AA /* mesh.c */; };
+		A183D6BD1BD407D500B2DC95 /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE114B51175000D33AA /* normal.c */; };
+		A183D6BE1BD407D500B2DC95 /* priorityq-heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE314B51175000D33AA /* priorityq-heap.c */; };
+		A183D6BF1BD407D500B2DC95 /* priorityq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE614B51175000D33AA /* priorityq.c */; };
+		A183D6C01BD407D500B2DC95 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FE814B51175000D33AA /* render.c */; };
+		A183D6C11BD407D500B2DC95 /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEA14B51175000D33AA /* sweep.c */; };
+		A183D6C21BD407D500B2DC95 /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEC14B51175000D33AA /* tess.c */; };
+		A183D6C31BD407D500B2DC95 /* tessmono.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D155FEE14B51175000D33AA /* tessmono.c */; };
+		A183D6C41BD407F600B2DC95 /* dict-list.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FD814B51175000D33AA /* dict-list.h */; };
+		A183D6C51BD407F600B2DC95 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDA14B51175000D33AA /* dict.h */; };
+		A183D6C61BD407F600B2DC95 /* geom.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDC14B51175000D33AA /* geom.h */; };
+		A183D6C71BD407F600B2DC95 /* memalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FDE14B51175000D33AA /* memalloc.h */; };
+		A183D6C81BD407F600B2DC95 /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE014B51175000D33AA /* mesh.h */; };
+		A183D6C91BD407F600B2DC95 /* normal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE214B51175000D33AA /* normal.h */; };
+		A183D6CA1BD407F600B2DC95 /* priorityq-heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE414B51175000D33AA /* priorityq-heap.h */; };
+		A183D6CB1BD407F600B2DC95 /* priorityq-sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE514B51175000D33AA /* priorityq-sort.h */; };
+		A183D6CC1BD407F600B2DC95 /* priorityq.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE714B51175000D33AA /* priorityq.h */; };
+		A183D6CD1BD407F600B2DC95 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FE914B51175000D33AA /* render.h */; };
+		A183D6CE1BD407F600B2DC95 /* sweep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FEB14B51175000D33AA /* sweep.h */; };
+		A183D6CF1BD407F600B2DC95 /* tess.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FED14B51175000D33AA /* tess.h */; };
+		A183D6D01BD407F600B2DC95 /* tessmono.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D155FEF14B51175000D33AA /* tessmono.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,10 +83,18 @@
 		3D155FED14B51175000D33AA /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tess.h; path = ../../libtess/tess.h; sourceTree = "<group>"; };
 		3D155FEE14B51175000D33AA /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tessmono.c; path = ../../libtess/tessmono.c; sourceTree = "<group>"; };
 		3D155FEF14B51175000D33AA /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tessmono.h; path = ../../libtess/tessmono.h; sourceTree = "<group>"; };
+		A183D6AF1BD4079400B2DC95 /* libtess.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtess.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D155FBE14B51127000D33AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A183D6AC1BD4079400B2DC95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3D155FC114B51127000D33AA /* libtess.a */,
+				A183D6AF1BD4079400B2DC95 /* libtess.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +175,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A183D6B81BD407C000B2DC95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A183D6C41BD407F600B2DC95 /* dict-list.h in Headers */,
+				A183D6C51BD407F600B2DC95 /* dict.h in Headers */,
+				A183D6C61BD407F600B2DC95 /* geom.h in Headers */,
+				A183D6C71BD407F600B2DC95 /* memalloc.h in Headers */,
+				A183D6C81BD407F600B2DC95 /* mesh.h in Headers */,
+				A183D6C91BD407F600B2DC95 /* normal.h in Headers */,
+				A183D6CA1BD407F600B2DC95 /* priorityq-heap.h in Headers */,
+				A183D6CB1BD407F600B2DC95 /* priorityq-sort.h in Headers */,
+				A183D6CC1BD407F600B2DC95 /* priorityq.h in Headers */,
+				A183D6CD1BD407F600B2DC95 /* render.h in Headers */,
+				A183D6CE1BD407F600B2DC95 /* sweep.h in Headers */,
+				A183D6CF1BD407F600B2DC95 /* tess.h in Headers */,
+				A183D6D01BD407F600B2DC95 /* tessmono.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -162,13 +215,35 @@
 			productReference = 3D155FC114B51127000D33AA /* libtess.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A183D6AE1BD4079400B2DC95 /* tess-tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A183D6B71BD4079400B2DC95 /* Build configuration list for PBXNativeTarget "tess-tv" */;
+			buildPhases = (
+				A183D6AB1BD4079400B2DC95 /* Sources */,
+				A183D6AC1BD4079400B2DC95 /* Frameworks */,
+				A183D6B81BD407C000B2DC95 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tess-tv";
+			productName = "tess-tv";
+			productReference = A183D6AF1BD4079400B2DC95 /* libtess.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3D155FB814B51127000D33AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					A183D6AE1BD4079400B2DC95 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = 3D155FBB14B51127000D33AA /* Build configuration list for PBXProject "tess" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -183,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				3D155FC014B51127000D33AA /* tess */,
+				A183D6AE1BD4079400B2DC95 /* tess-tv */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +282,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A183D6AB1BD4079400B2DC95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A183D6B91BD407D500B2DC95 /* dict.c in Sources */,
+				A183D6BA1BD407D500B2DC95 /* geom.c in Sources */,
+				A183D6BB1BD407D500B2DC95 /* memalloc.c in Sources */,
+				A183D6BC1BD407D500B2DC95 /* mesh.c in Sources */,
+				A183D6BD1BD407D500B2DC95 /* normal.c in Sources */,
+				A183D6BE1BD407D500B2DC95 /* priorityq-heap.c in Sources */,
+				A183D6BF1BD407D500B2DC95 /* priorityq.c in Sources */,
+				A183D6C01BD407D500B2DC95 /* render.c in Sources */,
+				A183D6C11BD407D500B2DC95 /* sweep.c in Sources */,
+				A183D6C21BD407D500B2DC95 /* tess.c in Sources */,
+				A183D6C31BD407D500B2DC95 /* tessmono.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -214,6 +308,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -272,6 +367,77 @@
 			};
 			name = Release;
 		};
+		A183D6B51BD4079400B2DC95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = tess;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		A183D6B61BD4079400B2DC95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = tess;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -289,6 +455,15 @@
 			buildConfigurations = (
 				3D155FCF14B51127000D33AA /* Debug */,
 				3D155FD014B51127000D33AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A183D6B71BD4079400B2DC95 /* Build configuration list for PBXNativeTarget "tess-tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A183D6B51BD4079400B2DC95 /* Debug */,
+				A183D6B61BD4079400B2DC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

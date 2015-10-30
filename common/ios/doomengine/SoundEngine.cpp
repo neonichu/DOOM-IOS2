@@ -1465,6 +1465,7 @@ class OpenALObject
 extern "C"
 void interruptionCallback(void* arg, UInt32 interruptionState)
 {
+#if !TARGET_OS_TV
 	(void)arg;
 	
     printf("Excuse this interruption...\n");
@@ -1482,6 +1483,7 @@ void interruptionCallback(void* arg, UInt32 interruptionState)
 //        gInterrupted = false;
 //        break;
     }
+#endif
 }
 
 
@@ -1506,6 +1508,7 @@ OSStatus  SoundEngine_Initialize(Float32 inMixerOutputRate)
     if(gInterrupted)
         return noErr;
 
+#if !TARGET_OS_TV
 	if( !isInitialized ) 
 	{
  		AudioSessionInitialize( NULL, NULL, interruptionCallback, NULL );
@@ -1513,6 +1516,7 @@ OSStatus  SoundEngine_Initialize(Float32 inMixerOutputRate)
 //		AudioSessionSetProperty( kAudioSessionProperty_AudioCategory, sizeof( sessionCategory ), &sessionCategory );
  		isInitialized = true;
  	}
+#endif
 	
 	if (sOpenALObject)
 		delete sOpenALObject;

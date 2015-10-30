@@ -187,9 +187,12 @@ Called by the system when a player's state changes (for example, they connect or
 				
 				std::vector<std::string> players;
 				
+#if !TARGET_OS_TV
 				for( NSString* currentID in match.playerIDs ) {
 					players.push_back( NSStringToStdString( currentID ) );
 				}
+#endif
+
 				matchHandler->allPlayersConnected( players );
 			}
 			
@@ -238,7 +241,11 @@ Called by the system if the user dismisses the matchmaking interface.
 {
 	switch ( matchmakerMode ) {
 		case MATCH_VIEW_MODAL: {
+#if TARGET_OS_TV
+            [gameViewController dismissViewControllerAnimated:YES completion:nil];
+#else
 			[gameViewController dismissModalViewControllerAnimated:YES];
+#endif
     		break;
 		}
 		
@@ -262,7 +269,11 @@ Called by the system if there is an error in the matchmaking process.
 	
 	switch ( matchmakerMode ) {
 		case MATCH_VIEW_MODAL: {
+#if TARGET_OS_TV
+            [gameViewController dismissViewControllerAnimated:YES completion:nil];
+#else
 			[gameViewController dismissModalViewControllerAnimated:YES];
+#endif
     		break;
 		}
 		
@@ -286,7 +297,11 @@ Called by the system if it finds a match.
 	
 	switch ( matchmakerMode ) {
 		case MATCH_VIEW_MODAL: {
+#if TARGET_OS_TV
+            [gameViewController dismissViewControllerAnimated:YES completion:nil];
+#else
 			[gameViewController dismissModalViewControllerAnimated:YES];
+#endif
     		break;
 		}
 		
@@ -307,12 +322,15 @@ Called by the system if it finds a match.
     {
 		matchHasStarted = NO;
        
+        // FIXME: Unavailable on tvOS
+#if !TARGET_OS_TV
 		std::vector<std::string> players;
 	   
 		for( NSString* currentID in match.playerIDs ) {
 			players.push_back( NSStringToStdString( currentID ) );
 		}
 		matchHandler->allPlayersConnected( players );
+#endif
     }
 }
 
@@ -424,6 +442,8 @@ namespace {
 		}
 		
 		
+        // FIXME: Unavailable on tvOS
+#if !TARGET_OS_TV
 		GKMatch * theMatch = [MatchDelegate sharedMatchDelegate].currentMatch;
 
 
@@ -438,6 +458,7 @@ namespace {
 		{
 			DisplayNSErrorMessage( @"GameKit Error", theError );
 		}
+#endif
 	}
 }
 
@@ -487,6 +508,9 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
 		return;
 	}
 
+    // FIXME: Unavailable on tvOS
+#if !TARGET_OS_TV
+
 	GKLocalPlayer *localPlayer = [GKLocalPlayer localPlayer];
 	[localPlayer authenticateWithCompletionHandler:^(NSError * error) {
 		if ( localPlayer.isAuthenticated )
@@ -505,6 +529,9 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
 			}
 			 
 			playerIdentifier = newPlayerIdentifier;
+
+            // FIXME: Unavailable on tvOS
+#if !TARGET_OS_TV
 			
 			// Set up the invitation handler. This code handles the cases where a friend
 			// is invited to the game from the matchmaking UI or the Game Center application.
@@ -518,7 +545,11 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
 				{
 					GKMatchmakerViewController *mmvc = [[[GKMatchmakerViewController alloc] initWithInvite:acceptedInvite] autorelease];
 					mmvc.matchmakerDelegate = [MatchDelegate sharedMatchDelegate];
+#if TARGET_OS_TV
+                    [currentViewController presentViewController:mmvc animated:YES completion:nil];
+#else
 					[currentViewController presentModalViewController:mmvc animated:YES];
+#endif
 				}
 				else if (playersToInvite)
 				{
@@ -529,9 +560,14 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
 
 					GKMatchmakerViewController *mmvc = [[[GKMatchmakerViewController alloc] initWithMatchRequest:request] autorelease];
 					mmvc.matchmakerDelegate = [MatchDelegate sharedMatchDelegate];
+#if TARGET_OS_TV
+                    [currentViewController presentViewController:mmvc animated:YES completion:nil];
+#else
 					[currentViewController presentModalViewController:mmvc animated:YES];
+#endif
 				}
 			};			 
+#endif
          } else {
 		 	// No new local player is logged in. If no player was logged in before, we shouldn't
 			// have to do anything here.
@@ -547,6 +583,8 @@ void AuthenticateLocalPlayer( id currentViewController, idGameCenterMatchHandler
 		 
 		 HandleError( error );
 	}];
+
+#endif
 }
 
 /*
@@ -600,7 +638,11 @@ void PresentMatchmaker( id currentViewController, matchParms_t parms, idGameCent
     GKMatchmakerViewController *mmvc = [[[GKMatchmakerViewController alloc] initWithMatchRequest:request] autorelease];
     mmvc.matchmakerDelegate = [MatchDelegate sharedMatchDelegate];
  
+#if TARGET_OS_TV
+    [(UIViewController*)currentViewController presentViewController:mmvc animated:YES completion:nil];
+#else
     [(UIViewController*)currentViewController presentModalViewController:mmvc animated:YES];
+#endif
 }
 
 /*

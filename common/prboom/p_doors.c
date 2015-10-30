@@ -76,7 +76,7 @@ void T_VerticalDoor (vldoor_t* door)
             S_StartSound((mobj_t *)&door->sector->soundorg,sfx_bdcls);
             break;
 
-          case normal:
+          case normal_:
           case genRaise:
             door->direction = -1; // time to go back down
             S_StartSound((mobj_t *)&door->sector->soundorg,sfx_dorcls);
@@ -107,7 +107,7 @@ void T_VerticalDoor (vldoor_t* door)
         {
           case raiseIn5Mins:
             door->direction = 1;  // time to raise then
-            door->type = normal;  // door acts just like normal 1 DR door now
+            door->type = normal_;  // door acts just like normal 1 DR door now
             S_StartSound((mobj_t *)&door->sector->soundorg,sfx_doropn);
             break;
 
@@ -157,8 +157,8 @@ void T_VerticalDoor (vldoor_t* door)
               S_StartSound((mobj_t *)&door->sector->soundorg,sfx_bdcls);
             break;
 
-          case normal:
-          case close:
+          case normal_:
+          case close_:
           case genRaise:
           case genClose:
             door->sector->ceilingdata = NULL; //jff 2/22/98
@@ -195,7 +195,7 @@ void T_VerticalDoor (vldoor_t* door)
           case genClose:
           case genBlazeClose:
           case blazeClose:
-          case close:          // Close types do not bounce, merely wait
+          case close_:          // Close types do not bounce, merely wait
             break;
 
           case blazeRaise:
@@ -243,7 +243,7 @@ void T_VerticalDoor (vldoor_t* door)
         switch(door->type)
         {
           case blazeRaise:       // regular open/close doors start waiting
-          case normal:
+          case normal_:
           case genRaise:
           case genBlazeRaise:
             door->direction = 0; // wait at top with delay
@@ -252,7 +252,7 @@ void T_VerticalDoor (vldoor_t* door)
 
           case close30ThenOpen:  // close and close/open doors are done
           case blazeOpen:
-          case open:
+          case open_:
           case genBlazeOpen:
           case genOpen:
           case genCdO:
@@ -395,7 +395,7 @@ int EV_DoDoor
         S_StartSound((mobj_t *)&door->sector->soundorg,sfx_bdcls);
         break;
 
-      case close:
+      case close_:
         door->topheight = P_FindLowestCeilingSurrounding(sec);
         door->topheight -= 4*FRACUNIT;
         door->direction = -1;
@@ -418,8 +418,8 @@ int EV_DoDoor
           S_StartSound((mobj_t *)&door->sector->soundorg,sfx_bdopn);
         break;
 
-      case normal:
-      case open:
+      case normal_:
+      case open_:
         door->direction = 1;
         door->topheight = P_FindLowestCeilingSurrounding(sec);
         door->topheight -= 4*FRACUNIT;
@@ -606,14 +606,14 @@ int EV_VerticalDoor
     case 26:
     case 27:
     case 28:
-      door->type = normal;
+      door->type = normal_;
       break;
 
     case 31:
     case 32:
     case 33:
     case 34:
-      door->type = open;
+      door->type = open_;
       line->special = 0;
       break;
 
@@ -668,7 +668,7 @@ void P_SpawnDoorCloseIn30 (sector_t* sec)
   door->thinker.function = T_VerticalDoor;
   door->sector = sec;
   door->direction = 0;
-  door->type = normal;
+  door->type = normal_;
   door->speed = VDOORSPEED;
   door->topcountdown = 30 * 35;
   door->line = NULL; // jff 1/31/98 remember line that triggered us

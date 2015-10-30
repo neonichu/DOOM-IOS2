@@ -19,7 +19,9 @@
  */
 #import "LabelButton.h"
 #import "Label.h"
+#if !TARGET_OS_TV
 #import "Slider.h"
+#endif
 #import "Switch.h"
 #import "Carousel.h"
 #import "Localization.h"
@@ -37,7 +39,9 @@
     
     // Do not optimize my class out
     [idLabel class ];
+#if !TARGET_OS_TV
     [idSlider class];
+#endif
     [idSwitch class];
     [idCarousel class];
     

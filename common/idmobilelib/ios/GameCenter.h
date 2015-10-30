@@ -47,7 +47,7 @@ from user code, so that C++-only portions of code can still access iOS functiona
 
 #include <string>
 #include <vector>
-#include <tr1/cstdint>
+#include <cstdint>
 
 #include "../sys/sys_defines.h"
 
@@ -97,7 +97,7 @@ namespace idGameCenter {
 	struct matchParms_t {
 		unsigned int minimumPlayers;
 		unsigned int maximumPlayers;
-		std::tr1::uint32_t automatchGroup;
+		std::uint32_t automatchGroup;
 	};
 
 	void				Initialize();

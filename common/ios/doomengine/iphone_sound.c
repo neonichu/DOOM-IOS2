@@ -90,6 +90,7 @@ int SysIPhoneOtherAudioIsPlaying() {
 
 void interruptionListener( void *inUserData, UInt32 inInterruption)
 {
+#if !TARGET_OS_TV
 	printf("Session interrupted! --- %s ---\n", inInterruption == kAudioSessionBeginInterruption ? "Begin Interruption" : "End Interruption");
 	
 	if ( inInterruption == kAudioSessionBeginInterruption ) {
@@ -112,6 +113,7 @@ void interruptionListener( void *inUserData, UInt32 inInterruption)
 		}
 		iphoneResumeMusic();
 	}
+#endif
 }
 
 void Sound_Init( void ) {
@@ -122,6 +124,7 @@ void Sound_Init( void ) {
 	
 	Cmd_AddCommand( "play", Sound_Play_f );
 	
+#if !TARGET_OS_TV
 	// make sure background ipod music mixes with our sound effects
 	Com_Printf( "...Initializing AudioSession\n" );
 	OSStatus status = 0;
@@ -143,6 +146,8 @@ void Sound_Init( void ) {
 	
 	status = AudioSessionSetActive(true);                                       // else "couldn't set audio session active\n"	
 	
+#endif
+
 	Com_Printf( "...Initializing OpenAL subsystem\n" );
 	
 	// get the OpenAL device

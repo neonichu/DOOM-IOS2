@@ -352,8 +352,14 @@ namespace idInAppStore {
 			
 			NSString * nsTitle = [NSString stringWithCString:title.c_str() encoding:NSUTF8StringEncoding];
 			NSString * nsDescription = [NSString stringWithCString:description.c_str() encoding:NSUTF8StringEncoding];
-			NSString * nsOkButton = [NSString stringWithCString:okButton.c_str() encoding:NSUTF8StringEncoding];
-			
+
+#if TARGET_OS_TV
+            UIAlertController* alertController = [UIAlertController alertControllerWithTitle:nsTitle message:nsDescription preferredStyle:UIAlertControllerStyleAlert];
+            [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+            [alertController release];
+#else
+            NSString * nsOkButton = [NSString stringWithCString:okButton.c_str() encoding:NSUTF8StringEncoding];
+
 			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nsTitle
 															message:nsDescription
 														   delegate:nil
@@ -363,6 +369,7 @@ namespace idInAppStore {
 			// Make sure the alert shows up on the main thread.
 			[alert show];
 			[alert release];
+#endif
 		}
 	}
 		
@@ -473,6 +480,12 @@ namespace idInAppStore {
 {
 	NSString * nsTitle = @"In-app purchase error";
 	NSString * nsDescription = @"Invalid product ID requested. In-app purchase will not work!";
+
+#if TARGET_OS_TV
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:nsTitle message:nsDescription preferredStyle:UIAlertControllerStyleAlert];
+    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    [alertController release];
+#else
 	NSString * nsOkButton = @"OK";
 	
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nsTitle
@@ -483,6 +496,7 @@ namespace idInAppStore {
 	
 	[alert show];
 	[alert release];
+#endif
 }
 
 /*
@@ -620,6 +634,11 @@ Called by updatedTransactions when a request fails.
 {
 	if (transaction.error.code != SKErrorPaymentCancelled)
     {
+#if TARGET_OS_TV
+        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"In-App Purchase error" message:[transaction.error localizedDescription] preferredStyle:UIAlertControllerStyleAlert];
+        [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+        [alertController release];
+#else
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"In-App Purchase error"
 														message:[transaction.error localizedDescription]
 													   delegate:nil
@@ -628,6 +647,7 @@ Called by updatedTransactions when a request fails.
 		
 		[alert show];
 		[alert release];
+#endif
     }
     [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 	

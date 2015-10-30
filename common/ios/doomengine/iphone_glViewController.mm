@@ -66,7 +66,11 @@ static bool inTransition = false;
     if (self) {
         
         // Create the OpenGL View.
+#if TARGET_OS_TV
+        EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+#else
         EAGLView *glView = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+#endif
         self.view = glView;
         [glView release];
         

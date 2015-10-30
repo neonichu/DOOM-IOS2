@@ -58,6 +58,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     // Disable Screen Dimming.
     [[ UIApplication sharedApplication] setIdleTimerDisabled: YES ];
     
+#if !TARGET_OS_TV
+
     // Initial Application Style config.
     [ application setStatusBarHidden: YES ];
 	
@@ -65,6 +67,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
     [ accelerometer setDelegate: self ];
     [ accelerometer setUpdateInterval: ACCELEROMETER_UPDATE_INTERVAL ];
+
+#endif
     
     [self InitializeInterfaceBuilder ];
 
@@ -142,6 +146,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
 	[super dealloc];
 }
 
+#if !TARGET_OS_TV
+
 /*
  ========================
  accelerometer 
@@ -158,6 +164,8 @@ const static float ACCELEROMETER_UPDATE_INTERVAL = 1.0f / FRAME_HERTZ;
     
 	iphoneTiltEvent( acc );
 }
+
+#endif
 
 /*
  ========================

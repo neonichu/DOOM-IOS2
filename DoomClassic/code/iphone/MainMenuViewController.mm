@@ -231,6 +231,8 @@
 	
 	//ShowMatchmaker( self, 2, 4 );
 	return;
+
+#if 0
 	
     // Go to the MP Menu.
     // get the address for the local service, which may
@@ -258,6 +260,8 @@
     [gAppDelegate ShowGLView];
     
     Sound_StartLocalSound( "iphone/baborted_01.wav" );
+
+#endif
     
 }
 

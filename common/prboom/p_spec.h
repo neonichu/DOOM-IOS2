@@ -364,10 +364,10 @@ typedef enum
 
 typedef enum
 {
-  normal,
+  normal_,
   close30ThenOpen,
-  close,
-  open,
+  close_,
+  open_,
   raiseIn5Mins,
   blazeRaise,
   blazeOpen,

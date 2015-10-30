@@ -36,17 +36,17 @@
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
 		43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */; };
 		720EBBAE0F82E0BB003F989A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720EBBAD0F82E0BB003F989A /* QuartzCore.framework */; };
-		A183D5EF1BD3EBDB00B2DC95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		A183D5F01BD3EBED00B2DC95 /* Doom_App.m in Sources */ = {isa = PBXBuildFile; fileRef = C86CA86314B4FF2B0057FF54 /* Doom_App.m */; };
+		A183D5EF1BD3EBDB00B2DC95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F01BD3EBED00B2DC95 /* Doom_App.m in Sources */ = {isa = PBXBuildFile; fileRef = C86CA86314B4FF2B0057FF54 /* Doom_App.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A183D5F11BD3EBF100B2DC95 /* doom_wads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 138FC9B917F0813400D94C5F /* doom_wads.cpp */; };
-		A183D5F21BD3EBF600B2DC95 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133F3E6F17F21C8700A12635 /* MainNavController.m */; };
-		A183D5F31BD3EBFB00B2DC95 /* MainMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E4F14B5122700B0E213 /* MainMenuViewController.mm */; };
-		A183D5F41BD3EBFF00B2DC95 /* EpisodeMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E6C14B6389B00B0E213 /* EpisodeMenuViewController.mm */; };
-		A183D5F51BD3EC0200B2DC95 /* MissionMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8B14B6750A00B0E213 /* MissionMenuViewController.mm */; };
-		A183D5F61BD3EC0600B2DC95 /* ControlsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E7B14B6704400B0E213 /* ControlsMenuViewController.mm */; };
-		A183D5F71BD3EC0900B2DC95 /* SettingsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8014B6709B00B0E213 /* SettingsMenuViewController.mm */; };
-		A183D5F81BD3EC0D00B2DC95 /* CreditsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E7614B649DA00B0E213 /* CreditsMenuViewController.mm */; };
-		A183D5F91BD3EC0F00B2DC95 /* LegalMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8514B6722900B0E213 /* LegalMenuViewController.mm */; };
+		A183D5F21BD3EBF600B2DC95 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133F3E6F17F21C8700A12635 /* MainNavController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F31BD3EBFB00B2DC95 /* MainMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E4F14B5122700B0E213 /* MainMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F41BD3EBFF00B2DC95 /* EpisodeMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E6C14B6389B00B0E213 /* EpisodeMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F51BD3EC0200B2DC95 /* MissionMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8B14B6750A00B0E213 /* MissionMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F61BD3EC0600B2DC95 /* ControlsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E7B14B6704400B0E213 /* ControlsMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F71BD3EC0900B2DC95 /* SettingsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8014B6709B00B0E213 /* SettingsMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F81BD3EC0D00B2DC95 /* CreditsMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E7614B649DA00B0E213 /* CreditsMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A183D5F91BD3EC0F00B2DC95 /* LegalMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8012E8514B6722900B0E213 /* LegalMenuViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A183D5FA1BD3EC2300B2DC95 /* libdoomengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF31F8A148C30F100C66CD7 /* libdoomengine.a */; };
 		A183D6001BD3EC2400B2DC95 /* libidmobilelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A183D5FC1BD3EC2400B2DC95 /* libidmobilelib.a */; };
 		A183D6011BD3EC2400B2DC95 /* libprboom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A183D5FD1BD3EC2400B2DC95 /* libprboom.a */; };
@@ -119,32 +119,8 @@
 		A183D64D1BD3ECBA00B2DC95 /* DOOM_72.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CF6B13DE1F0600F0EAC6 /* DOOM_72.png */; };
 		A183D64E1BD3ECBA00B2DC95 /* DOOM_114.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CF6913DE1EF500F0EAC6 /* DOOM_114.png */; };
 		A183D64F1BD3ECBA00B2DC95 /* DOOM_57.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D1CF6713DE1EB600F0EAC6 /* DOOM_57.png */; };
-		A183D6501BD3ECD500B2DC95 /* MissionMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E8C14B6750B00B0E213 /* MissionMenuView.xib */; };
-		A183D6511BD3ECD500B2DC95 /* LegalMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E8614B6722A00B0E213 /* LegalMenuView.xib */; };
-		A183D6521BD3ECD500B2DC95 /* SettingsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E8114B6709C00B0E213 /* SettingsMenuView.xib */; };
-		A183D6531BD3ECD500B2DC95 /* ControlsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E7C14B6704400B0E213 /* ControlsMenuView.xib */; };
-		A183D6541BD3ECD500B2DC95 /* CreditsMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E7714B649DA00B0E213 /* CreditsMenuView.xib */; };
-		A183D6551BD3ECD500B2DC95 /* EpisodeMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E6D14B6389B00B0E213 /* EpisodeMenuView.xib */; };
-		A183D6561BD3ECD500B2DC95 /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E5014B5122700B0E213 /* MainMenuView.xib */; };
-		A183D6571BD3ECD500B2DC95 /* OpenGLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8012E7214B646BD00B0E213 /* OpenGLView.xib */; };
 		A183D6581BD3ECD500B2DC95 /* idGinzaNar-Md2.otf in Resources */ = {isa = PBXBuildFile; fileRef = C81E0E5D13E076E400B1049A /* idGinzaNar-Md2.otf */; };
 		A183D6591BD3ECD500B2DC95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8011C6814BF8BA2007AC5C5 /* Localizable.strings */; };
-		A183D65A1BD3ECDF00B2DC95 /* ControlsMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2D71802F15C00884E11 /* ControlsMenuViewi5.xib */; };
-		A183D65B1BD3ECDF00B2DC95 /* CreditsMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2D81802F15C00884E11 /* CreditsMenuViewi5.xib */; };
-		A183D65C1BD3ECDF00B2DC95 /* EpisodeMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2D91802F15C00884E11 /* EpisodeMenuViewi5.xib */; };
-		A183D65D1BD3ECDF00B2DC95 /* LegalMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2DA1802F15C00884E11 /* LegalMenuViewi5.xib */; };
-		A183D65E1BD3ECDF00B2DC95 /* MainMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2DB1802F15C00884E11 /* MainMenuViewi5.xib */; };
-		A183D65F1BD3ECDF00B2DC95 /* MissionMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2DC1802F15C00884E11 /* MissionMenuViewi5.xib */; };
-		A183D6601BD3ECDF00B2DC95 /* OpenGLViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2DD1802F15C00884E11 /* OpenGLViewi5.xib */; };
-		A183D6611BD3ECDF00B2DC95 /* SettingsMenuViewi5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2DE1802F15C00884E11 /* SettingsMenuViewi5.xib */; };
-		A183D6621BD3ECE800B2DC95 /* ControlsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5114BB88AC0006467C /* ControlsMenuView~ipad.xib */; };
-		A183D6631BD3ECE800B2DC95 /* CreditsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5214BB88AC0006467C /* CreditsMenuView~ipad.xib */; };
-		A183D6641BD3ECE800B2DC95 /* EpisodeMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5314BB88AC0006467C /* EpisodeMenuView~ipad.xib */; };
-		A183D6651BD3ECE800B2DC95 /* LegalMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5414BB88AC0006467C /* LegalMenuView~ipad.xib */; };
-		A183D6661BD3ECE800B2DC95 /* MainMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5514BB88AC0006467C /* MainMenuView~ipad.xib */; };
-		A183D6671BD3ECE800B2DC95 /* MissionMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5614BB88AC0006467C /* MissionMenuView~ipad.xib */; };
-		A183D6681BD3ECE800B2DC95 /* OpenGLView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5714BB88AC0006467C /* OpenGLView~ipad.xib */; };
-		A183D6691BD3ECE800B2DC95 /* SettingsMenuView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB8A5814BB88AC0006467C /* SettingsMenuView~ipad.xib */; };
 		A183D66A1BD3ECF400B2DC95 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132AC2CF1801D2E600884E11 /* Default-568h@2x.png */; };
 		A183D66B1BD3ECF500B2DC95 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
 		A183D66C1BD3ED0400B2DC95 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4364BF3E0F5CB25900F29317 /* dist.plist */; };
@@ -248,12 +224,19 @@
 			remoteGlobalIDString = 3DE694391489AFDE0049CAA4;
 			remoteInfo = doomengine;
 		};
-		A183D5ED1BD3EBC000B2DC95 /* PBXContainerItemProxy */ = {
+		A183D81A1BD40AEE00B2DC95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF31F85148C30F100C66CD7 /* doomengine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A183D6711BD4069600B2DC95;
+			remoteInfo = "doomengine-tv";
+		};
+		A1DDEFE51BE39DA600C704F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3DF31F85148C30F100C66CD7 /* doomengine.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 3DE694381489AFDE0049CAA4;
-			remoteInfo = doomengine;
+			remoteGlobalIDString = A183D6701BD4069600B2DC95;
+			remoteInfo = "doomengine-tv";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -541,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF31F8A148C30F100C66CD7 /* libdoomengine.a */,
+				A183D81B1BD40AEE00B2DC95 /* libdoomengine.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -766,7 +750,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A183D5EE1BD3EBC000B2DC95 /* PBXTargetDependency */,
+				A1DDEFE61BE39DA600C704F8 /* PBXTargetDependency */,
 			);
 			name = DoomTV;
 			productName = DoomTV;
@@ -779,7 +763,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = RWJ5E97L7R;
@@ -834,6 +818,13 @@
 			fileType = archive.ar;
 			path = libdoomengine.a;
 			remoteRef = 3DF31F89148C30F100C66CD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A183D81B1BD40AEE00B2DC95 /* libdoomengine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdoomengine.a;
+			remoteRef = A183D81A1BD40AEE00B2DC95 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -943,30 +934,6 @@
 				A183D66C1BD3ED0400B2DC95 /* dist.plist in Resources */,
 				A183D66A1BD3ECF400B2DC95 /* Default-568h@2x.png in Resources */,
 				A183D66B1BD3ECF500B2DC95 /* Default.png in Resources */,
-				A183D6621BD3ECE800B2DC95 /* ControlsMenuView~ipad.xib in Resources */,
-				A183D6631BD3ECE800B2DC95 /* CreditsMenuView~ipad.xib in Resources */,
-				A183D6641BD3ECE800B2DC95 /* EpisodeMenuView~ipad.xib in Resources */,
-				A183D6651BD3ECE800B2DC95 /* LegalMenuView~ipad.xib in Resources */,
-				A183D6661BD3ECE800B2DC95 /* MainMenuView~ipad.xib in Resources */,
-				A183D6671BD3ECE800B2DC95 /* MissionMenuView~ipad.xib in Resources */,
-				A183D6681BD3ECE800B2DC95 /* OpenGLView~ipad.xib in Resources */,
-				A183D6691BD3ECE800B2DC95 /* SettingsMenuView~ipad.xib in Resources */,
-				A183D65A1BD3ECDF00B2DC95 /* ControlsMenuViewi5.xib in Resources */,
-				A183D65B1BD3ECDF00B2DC95 /* CreditsMenuViewi5.xib in Resources */,
-				A183D65C1BD3ECDF00B2DC95 /* EpisodeMenuViewi5.xib in Resources */,
-				A183D65D1BD3ECDF00B2DC95 /* LegalMenuViewi5.xib in Resources */,
-				A183D65E1BD3ECDF00B2DC95 /* MainMenuViewi5.xib in Resources */,
-				A183D65F1BD3ECDF00B2DC95 /* MissionMenuViewi5.xib in Resources */,
-				A183D6601BD3ECDF00B2DC95 /* OpenGLViewi5.xib in Resources */,
-				A183D6611BD3ECDF00B2DC95 /* SettingsMenuViewi5.xib in Resources */,
-				A183D6501BD3ECD500B2DC95 /* MissionMenuView.xib in Resources */,
-				A183D6511BD3ECD500B2DC95 /* LegalMenuView.xib in Resources */,
-				A183D6521BD3ECD500B2DC95 /* SettingsMenuView.xib in Resources */,
-				A183D6531BD3ECD500B2DC95 /* ControlsMenuView.xib in Resources */,
-				A183D6541BD3ECD500B2DC95 /* CreditsMenuView.xib in Resources */,
-				A183D6551BD3ECD500B2DC95 /* EpisodeMenuView.xib in Resources */,
-				A183D6561BD3ECD500B2DC95 /* MainMenuView.xib in Resources */,
-				A183D6571BD3ECD500B2DC95 /* OpenGLView.xib in Resources */,
 				A183D6581BD3ECD500B2DC95 /* idGinzaNar-Md2.otf in Resources */,
 				A183D6591BD3ECD500B2DC95 /* Localizable.strings in Resources */,
 				A183D6451BD3ECBA00B2DC95 /* DOOM_76.png in Resources */,
@@ -1097,10 +1064,10 @@
 			name = doomengine;
 			targetProxy = 3DACFC1B148C591500EB17BA /* PBXContainerItemProxy */;
 		};
-		A183D5EE1BD3EBC000B2DC95 /* PBXTargetDependency */ = {
+		A1DDEFE61BE39DA600C704F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = doomengine;
-			targetProxy = A183D5ED1BD3EBC000B2DC95 /* PBXContainerItemProxy */;
+			name = "doomengine-tv";
+			targetProxy = A1DDEFE51BE39DA600C704F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1305,6 +1272,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../common/idmobilelib/";
 				INFOPLIST_FILE = DoomTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1313,6 +1281,7 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../../../common/ios/doomengine ../../../common ../../../../idTechM/idTechM/shared/idmobilelib $(SRCROOT)/common/idmobilelib/";
 			};
 			name = Debug;
 		};
@@ -1341,6 +1310,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../common/idmobilelib/";
 				INFOPLIST_FILE = DoomTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1349,6 +1319,7 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../../../common/ios/doomengine ../../../common ../../../../idTechM/idTechM/shared/idmobilelib $(SRCROOT)/common/idmobilelib/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1378,6 +1349,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../common/idmobilelib/";
 				INFOPLIST_FILE = DoomTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1386,6 +1358,7 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../../../common/ios/doomengine ../../../common ../../../../idTechM/idTechM/shared/idmobilelib $(SRCROOT)/common/idmobilelib/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AdHocDist;
@@ -1415,6 +1388,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../common/idmobilelib/";
 				INFOPLIST_FILE = DoomTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1423,6 +1397,7 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				USER_HEADER_SEARCH_PATHS = "../../../common/ios/doomengine ../../../common ../../../../idTechM/idTechM/shared/idmobilelib $(SRCROOT)/common/idmobilelib/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -1438,6 +1413,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H=1";
 				GCC_THUMB_SUPPORT = NO;
@@ -1651,6 +1627,7 @@
 				A183D5EC1BD3EB8400B2DC95 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Doom" */ = {
 			isa = XCConfigurationList;

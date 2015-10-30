@@ -77,7 +77,11 @@ void SysIPhoneOpenURL( const char *url ) {
 }
 
 int SysIPhoneIsDeviceLandscapeRight( void ) {
+#if TARGET_OS_TV
+    return 0;
+#else
 	return [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight;
+#endif
 }
 
 void SysIPhoneSetUIKitOrientation( int isLandscapeRight ) {

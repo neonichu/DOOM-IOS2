@@ -56,7 +56,9 @@ CAEAGLLayer *eaglLayer;
 	eaglview = self;
 	
 	// allow multiple touch events
+#if !TARGET_OS_TV
 	self.multipleTouchEnabled = true;
+#endif
 	
     // Double the resolution on iPhone 4.
 	if ( [[UIScreen mainScreen] respondsToSelector:@selector(scale)] &&

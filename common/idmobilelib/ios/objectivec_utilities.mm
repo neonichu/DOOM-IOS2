@@ -22,7 +22,11 @@
 #include "LocalizationObjectiveC.h"
 
 #import <Foundation/NSString.h>
+#if TARGET_OS_TV
+#import <UIKit/UIKit.h>
+#else
 #import <UIKit/UIAlertView.h>
+#endif
 #import <Foundation/NSError.h>
 
 /*
@@ -59,9 +63,15 @@ void DisplayNSErrorMessage( NSString * title, NSError * error ) {
 		messageString = [NSString stringWithFormat:@"%@", messageString];
 	}
  
+#if TARGET_OS_TV
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:idLocalization_GetNSString( title ) message:messageString preferredStyle:UIAlertControllerStyleAlert];
+    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    [alertController release];
+#else
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:idLocalization_GetNSString( title )
         message:messageString delegate:nil
         cancelButtonTitle:idLocalization_GetNSString(@"OK") otherButtonTitles:nil];
     [alertView show];
     [alertView release];
+#endif
 }

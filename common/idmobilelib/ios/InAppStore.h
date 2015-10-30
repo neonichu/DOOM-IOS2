@@ -50,7 +50,7 @@ the application can get the price information and actually initiate purchases of
 
 #include <vector>
 #include <string>
-#include <tr1/functional>
+#include <functional>
 
 namespace idInAppStore {
 	
@@ -85,7 +85,7 @@ namespace idInAppStore {
 		PRODUCT_STATUS_PURCHASED
 	};
 	
-	typedef std::tr1::function< void ( const char * const, productStatus_t ) > callback_t;
+    typedef std::function< void ( const char * const, productStatus_t ) > callback_t;
 	
 	void SetCallback( callback_t callback );
 	void ClearCallback();

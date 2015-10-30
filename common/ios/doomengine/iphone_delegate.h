@@ -24,7 +24,11 @@
 
 @class EAGLView;
 
+#if TARGET_OS_TV
+@interface iphoneApp : NSObject <UIApplicationDelegate> {
+#else
 @interface iphoneApp : NSObject <UIApplicationDelegate, UIAccelerometerDelegate> {
+#endif
     
     UIWindow *                  window;                 // Main Application Window.
     UINavigationController *    navigationController;   // Our View Stack
