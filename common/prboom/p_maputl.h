@@ -84,6 +84,6 @@ extern fixed_t opentop;
 extern fixed_t openbottom;
 extern fixed_t openrange;
 extern fixed_t lowfloor;
-extern divline_t trace;
+extern divline_t trace_;
 
 #endif  /* __P_MAPUTL__ */

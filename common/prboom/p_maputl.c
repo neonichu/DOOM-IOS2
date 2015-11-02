@@ -422,7 +422,7 @@ static void check_intercept(void)
     }
 }
 
-divline_t trace;
+divline_t trace_;
 
 // PIT_AddLineIntercepts.
 // Looks for lines in the given block
@@ -442,16 +442,16 @@ boolean PIT_AddLineIntercepts(line_t *ld)
   divline_t dl;
 
   // avoid precision problems with two routines
-  if (trace.dx >  FRACUNIT*16 || trace.dy >  FRACUNIT*16 ||
-      trace.dx < -FRACUNIT*16 || trace.dy < -FRACUNIT*16)
+  if (trace_.dx >  FRACUNIT*16 || trace_.dy >  FRACUNIT*16 ||
+      trace_.dx < -FRACUNIT*16 || trace_.dy < -FRACUNIT*16)
     {
-      s1 = P_PointOnDivlineSide (ld->v1->x, ld->v1->y, &trace);
-      s2 = P_PointOnDivlineSide (ld->v2->x, ld->v2->y, &trace);
+      s1 = P_PointOnDivlineSide (ld->v1->x, ld->v1->y, &trace_);
+      s2 = P_PointOnDivlineSide (ld->v2->x, ld->v2->y, &trace_);
     }
   else
     {
-      s1 = P_PointOnLineSide (trace.x, trace.y, ld);
-      s2 = P_PointOnLineSide (trace.x+trace.dx, trace.y+trace.dy, ld);
+      s1 = P_PointOnLineSide (trace_.x, trace_.y, ld);
+      s2 = P_PointOnLineSide (trace_.x+trace_.dx, trace_.y+trace_.dy, ld);
     }
 
   if (s1 == s2)
@@ -459,7 +459,7 @@ boolean PIT_AddLineIntercepts(line_t *ld)
 
   // hit the line
   P_MakeDivline(ld, &dl);
-  frac = P_InterceptVector(&trace, &dl);
+  frac = P_InterceptVector(&trace_, &dl);
 
   if (frac < 0)
     return true;        // behind source
@@ -488,7 +488,7 @@ boolean PIT_AddThingIntercepts(mobj_t *thing)
   fixed_t   frac;
 
   // check a corner to corner crossection for hit
-  if ((trace.dx ^ trace.dy) > 0)
+  if ((trace_.dx ^ trace_.dy) > 0)
     {
       x1 = thing->x - thing->radius;
       y1 = thing->y + thing->radius;
@@ -503,8 +503,8 @@ boolean PIT_AddThingIntercepts(mobj_t *thing)
       y2 = thing->y + thing->radius;
     }
 
-  s1 = P_PointOnDivlineSide (x1, y1, &trace);
-  s2 = P_PointOnDivlineSide (x2, y2, &trace);
+  s1 = P_PointOnDivlineSide (x1, y1, &trace_);
+  s2 = P_PointOnDivlineSide (x2, y2, &trace_);
 
   if (s1 == s2)
     return true;                // line isn't crossed
@@ -514,7 +514,7 @@ boolean PIT_AddThingIntercepts(mobj_t *thing)
   dl.dx = x2-x1;
   dl.dy = y2-y1;
 
-  frac = P_InterceptVector (&trace, &dl);
+  frac = P_InterceptVector (&trace_, &dl);
 
   if (frac < 0)
     return true;                // behind source
@@ -586,10 +586,10 @@ boolean P_PathTraverse(fixed_t x1, fixed_t y1, fixed_t x2, fixed_t y2,
   if (!((y1-bmaporgy)&(MAPBLOCKSIZE-1)))
     y1 += FRACUNIT;     // don't side exactly on a line
 
-  trace.x = x1;
-  trace.y = y1;
-  trace.dx = x2 - x1;
-  trace.dy = y2 - y1;
+  trace_.x = x1;
+  trace_.y = y1;
+  trace_.dx = x2 - x1;
+  trace_.dy = y2 - y1;
 
   x1 -= bmaporgx;
   y1 -= bmaporgy;
