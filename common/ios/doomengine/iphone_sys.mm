@@ -24,8 +24,6 @@
 #import <UIKit/UIKit.h>
 #import "ios/View.h"
 
-char	consoleCommand[1024];
-
 int SysIphoneMicroseconds() {
 	struct timeval tp;
 	struct timezone tzp;

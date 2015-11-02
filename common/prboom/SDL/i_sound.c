@@ -86,8 +86,6 @@
 
 // Variables used by Boom from Allegro
 // created here to avoid changes to core Boom files
-int snd_card = 1;
-int mus_card = 1;
 int detect_voices = 0; // God knows
 
 static boolean sound_inited = false;
@@ -96,9 +94,6 @@ static boolean first_sound_init = true;
 // Needed for calling the actual sound output.
 static int SAMPLECOUNT=   512;
 #define MAX_CHANNELS    32
-
-// MWM 2000-01-08: Sample rate in samples/second
-int snd_samplerate=11025;
 
 // The actual output device.
 int audio_fd;
