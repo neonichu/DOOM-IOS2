@@ -176,6 +176,7 @@ void Z_DumpMemory(void)
 
   sprintf(buf, "%s/memdump.%d", HEAPDUMP_DIR, dump++);
   fp = fopen(buf, "w");
+  if (!fp) return;
   for (tag = PU_FREE; tag < PU_MAX; tag++)
   {
     memblock_t* end_block, *block;
