@@ -207,11 +207,16 @@
     // Switch to episode view menu.
     Doom_EpisodeMenuViewController *vc = nil;
 	
+
+#if TARGET_OS_TV
+    vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_EpisodeMenuViewController alloc] initWithNibName:@"EpisodeMenuView" bundle:nil];
 	}
+#endif
 	
 	
     [self.navigationController pushViewController:vc animated:NO];
@@ -273,12 +278,16 @@
 - (IBAction) CreditsPressed {
     
     Doom_CreditsMenuViewController *vc = nil;
-	
+
+#if TARGET_OS_TV
+    vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:@"CreditsMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:@"CreditsMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_CreditsMenuViewController alloc] initWithNibName:@"CreditsMenuView" bundle:nil];
 	}
+#endif
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -306,12 +315,16 @@
 - (IBAction) LegalPressed {
     
     Doom_LegalMenuViewController *vc = nil;
-	
+
+#if TARGET_OS_TV
+    vc = [[Doom_LegalMenuViewController alloc] initWithNibName:@"LegalMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_LegalMenuViewController alloc] initWithNibName:@"LegalMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_LegalMenuViewController alloc] initWithNibName:@"LegalMenuView" bundle:nil];
 	}
+#endif
 	
 	
     [self.navigationController pushViewController:vc animated:NO];
@@ -354,12 +367,16 @@
 - (IBAction) ControlsOptionsPressed {
     
     Doom_ControlsMenuViewController *vc = nil;
-	
+
+#if TARGET_OS_TV
+    vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:@"ControlsMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:@"ControlsMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_ControlsMenuViewController alloc] initWithNibName:@"ControlsMenuView" bundle:nil];
 	}
+#endif
 	
     [self.navigationController pushViewController:vc animated:NO];
     [vc release];
@@ -377,12 +394,16 @@
     
 
 	Doom_SettingsMenuViewController *vc = nil;
-	
+
+#if TARGET_OS_TV
+    vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:@"SettingsMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:@"SettingsMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_SettingsMenuViewController alloc] initWithNibName:@"SettingsMenuView" bundle:nil];
 	}
+#endif
 	
      [self.navigationController pushViewController:vc animated:NO];
      [vc release];

@@ -110,11 +110,15 @@
     Doom_MissionMenuViewController *vc = nil;
 	
 	
+#if TARGET_OS_TV
+    vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuView-tvos" bundle:nil];
+#else
 	if ( IS_IPHONE_5 ) {
 		vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuViewi5" bundle:nil];
 	} else {
 		vc = [[Doom_MissionMenuViewController alloc] initWithNibName:@"MissionMenuView" bundle:nil];
 	}
+#endif
 	
 	
     [self.navigationController pushViewController:vc animated:NO];

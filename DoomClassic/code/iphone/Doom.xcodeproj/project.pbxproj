@@ -36,6 +36,14 @@
 		43CF02FF0F56974E00E4A23D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CF02FE0F56974E00E4A23D /* Default.png */; };
 		43E8D4E00F51B48B003F09B2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */; };
 		720EBBAE0F82E0BB003F989A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720EBBAD0F82E0BB003F989A /* QuartzCore.framework */; };
+		A15158D61BE72AFC004ACBDE /* ControlsMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43A1BE72942009EEA9E /* ControlsMenuView-tvos.xib */; };
+		A15158D71BE72AFC004ACBDE /* CreditsMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43B1BE72942009EEA9E /* CreditsMenuView-tvos.xib */; };
+		A15158D81BE72AFC004ACBDE /* EpisodeMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43C1BE72942009EEA9E /* EpisodeMenuView-tvos.xib */; };
+		A15158D91BE72AFC004ACBDE /* LegalMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43D1BE72942009EEA9E /* LegalMenuView-tvos.xib */; };
+		A15158DA1BE72AFC004ACBDE /* MainMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43E1BE72942009EEA9E /* MainMenuView-tvos.xib */; };
+		A15158DB1BE72AFC004ACBDE /* MissionMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E43F1BE72942009EEA9E /* MissionMenuView-tvos.xib */; };
+		A15158DC1BE72AFC004ACBDE /* OpenGLView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E4401BE72942009EEA9E /* OpenGLView-tvos.xib */; };
+		A15158DD1BE72AFC004ACBDE /* SettingsMenuView-tvos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A139E4411BE72942009EEA9E /* SettingsMenuView-tvos.xib */; };
 		A183D5EF1BD3EBDB00B2DC95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A183D5F01BD3EBED00B2DC95 /* Doom_App.m in Sources */ = {isa = PBXBuildFile; fileRef = C86CA86314B4FF2B0057FF54 /* Doom_App.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A183D5F11BD3EBF100B2DC95 /* doom_wads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 138FC9B917F0813400D94C5F /* doom_wads.cpp */; };
@@ -275,6 +283,14 @@
 		43E8D4DF0F51B48B003F09B2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = /System/Library/Frameworks/OpenAL.framework; sourceTree = "<absolute>"; };
 		720EBBAD0F82E0BB003F989A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A139E43A1BE72942009EEA9E /* ControlsMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "ControlsMenuView-tvos.xib"; path = "../tvos/ControlsMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E43B1BE72942009EEA9E /* CreditsMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "CreditsMenuView-tvos.xib"; path = "../tvos/CreditsMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E43C1BE72942009EEA9E /* EpisodeMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "EpisodeMenuView-tvos.xib"; path = "../tvos/EpisodeMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E43D1BE72942009EEA9E /* LegalMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LegalMenuView-tvos.xib"; path = "../tvos/LegalMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E43E1BE72942009EEA9E /* MainMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MainMenuView-tvos.xib"; path = "../tvos/MainMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E43F1BE72942009EEA9E /* MissionMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "MissionMenuView-tvos.xib"; path = "../tvos/MissionMenuView-tvos.xib"; sourceTree = "<group>"; };
+		A139E4401BE72942009EEA9E /* OpenGLView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "OpenGLView-tvos.xib"; path = "../tvos/OpenGLView-tvos.xib"; sourceTree = "<group>"; };
+		A139E4411BE72942009EEA9E /* SettingsMenuView-tvos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "SettingsMenuView-tvos.xib"; path = "../tvos/SettingsMenuView-tvos.xib"; sourceTree = "<group>"; };
 		A183D5D71BD3EB8400B2DC95 /* DoomTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoomTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A183D5E71BD3EB8400B2DC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A183D5FB1BD3EC2400B2DC95 /* libEmbeddedAudioSynthesis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEmbeddedAudioSynthesis.a; path = "../../../../../Library/Developer/Xcode/DerivedData/DoomClassics-bgecwuiofeqmkignzjondkzbipes/Build/Products/Debug-iphoneos/libEmbeddedAudioSynthesis.a"; sourceTree = "<group>"; };
@@ -529,6 +545,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A139E4391BE72929009EEA9E /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				A139E43A1BE72942009EEA9E /* ControlsMenuView-tvos.xib */,
+				A139E43B1BE72942009EEA9E /* CreditsMenuView-tvos.xib */,
+				A139E43C1BE72942009EEA9E /* EpisodeMenuView-tvos.xib */,
+				A139E43D1BE72942009EEA9E /* LegalMenuView-tvos.xib */,
+				A139E43E1BE72942009EEA9E /* MainMenuView-tvos.xib */,
+				A139E43F1BE72942009EEA9E /* MissionMenuView-tvos.xib */,
+				A139E4401BE72942009EEA9E /* OpenGLView-tvos.xib */,
+				A139E4411BE72942009EEA9E /* SettingsMenuView-tvos.xib */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
 		A183D5D81BD3EB8400B2DC95 /* DoomTV */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +671,7 @@
 				132AC2D61802F12200884E11 /* iPhone4Inch */,
 				C8012E4C14B510C600B0E213 /* iPad */,
 				C8012E4B14B510BA00B0E213 /* iPhone */,
+				A139E4391BE72929009EEA9E /* tvOS */,
 			);
 			name = Menus;
 			sourceTree = "<group>";
@@ -931,6 +963,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15158D61BE72AFC004ACBDE /* ControlsMenuView-tvos.xib in Resources */,
+				A15158D71BE72AFC004ACBDE /* CreditsMenuView-tvos.xib in Resources */,
+				A15158D81BE72AFC004ACBDE /* EpisodeMenuView-tvos.xib in Resources */,
+				A15158D91BE72AFC004ACBDE /* LegalMenuView-tvos.xib in Resources */,
+				A15158DA1BE72AFC004ACBDE /* MainMenuView-tvos.xib in Resources */,
+				A15158DB1BE72AFC004ACBDE /* MissionMenuView-tvos.xib in Resources */,
+				A15158DC1BE72AFC004ACBDE /* OpenGLView-tvos.xib in Resources */,
+				A15158DD1BE72AFC004ACBDE /* SettingsMenuView-tvos.xib in Resources */,
 				A183D66C1BD3ED0400B2DC95 /* dist.plist in Resources */,
 				A183D66A1BD3ECF400B2DC95 /* Default-568h@2x.png in Resources */,
 				A183D66B1BD3ECF500B2DC95 /* Default.png in Resources */,
